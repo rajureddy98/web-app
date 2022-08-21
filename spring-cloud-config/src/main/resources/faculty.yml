@@ -7,7 +7,7 @@ spring:
     password: rajureddy98
     platform: postgres
    #url: jdbc:postgresql://host.docker.internal:5432/faculty #docker
-    url: jdbc:postgresql://facultyy.ctgdmuvntgrx.ap-south-1.rds.amazonaws.com:5432
+    url: jdbc:postgresql://@facultyy.ctgdmuvntgrx.ap-south-1.rds.amazonaws.com:5432/facultyy?user=postgres&password=rajureddy98
     username: postgres
   jackson:
     serialization:
