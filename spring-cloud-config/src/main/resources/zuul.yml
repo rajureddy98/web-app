@@ -2,7 +2,7 @@ eureka:
   client:
     serviceUrl:
       # defaultZone: http://netflix-eureka:8761/eureka #docker
-      defaultZone: http://65.0.103.248:30001/eureka
+      defaultZone: http://35.93.51.46:30001/eureka
 server:
   port: 8765
 spring:
