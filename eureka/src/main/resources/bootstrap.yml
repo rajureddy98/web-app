@@ -4,5 +4,5 @@ spring:
   cloud:
     config:
      #uri: http://spring-cloud-config:8888 #docker
-      uri: http://65.0.103.248:30000
+      uri: http://35.93.51.46:30001
       failFast: true
