@@ -4,6 +4,6 @@ spring:
   cloud:
     config:
      #uri: http://spring-cloud-config:8888 #docker
-      uri: http://54.191.157.112:8888
+      uri: http://35.91.224.176:8888
       failFast: true
 logging.file: /home/ansadmin/logs/zuul/zuul.log
