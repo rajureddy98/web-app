@@ -1,0 +1,16 @@
+- hosts: all
+  become: yes
+  become_user: ansadmin
+  tasks:
+    - name: copying jar file with owner permissions
+      copy:
+        src: /var/lib/jenkins/workspace/web-app/{{ msname }}/target/{{ msname }}-1.0.jar
+        dest: /home/ansadmin/deployments
+        owner: ansadmin
+
+    - name: Run jar file
+      shell: "nohup java -jar /home/ansadmin/deployments/{{ msname }}-1.0.jar &"
+      register: nohup
+
+    - debug:
+        msg: '{{nohup}}'
