@@ -3,9 +3,6 @@ spring:
     name: spring-cloud-config
   profiles:
     active: native
-  logback:
-    rollingpolicy:
-      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz # by date
-      max-file-size: 10MB # by size
+  logging.file: /logs/log.log
 server:
   port: 8888
