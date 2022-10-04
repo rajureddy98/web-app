@@ -3,7 +3,9 @@ spring:
     name: spring-cloud-config
   profiles:
     active: native
-  logging:
-    file: /home/ansadmin/logs/spring-cloud-config.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz # by date
+      max-file-size: 10MB # by size
 server:
   port: 8888
