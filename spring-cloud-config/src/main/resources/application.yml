@@ -3,6 +3,6 @@ spring:
     name: spring-cloud-config
   profiles:
     active: native
-logging.file: /home/ansadmin/logs/log.log
+logging.file: /home/ansadmin/logs/spring-cloud-config/spring-cloud-config.log
 server:
   port: 8888
