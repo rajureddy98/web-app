@@ -1,6 +1,7 @@
 spring:
   application:
     name: netflix-eureka
+logging.file: /home/ansadmin/logs/eureka/eureka.log
   cloud:
     config:
      #uri: http://spring-cloud-config:8888 #docker
