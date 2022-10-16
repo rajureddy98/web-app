@@ -29,4 +29,4 @@ eureka:
     client:
       serviceUrl:
          #defaultZone: http://netflix-eureka:8761/eureka #docker
-          defaultZone: http://65.0.103.248:30001/eureka
+          defaultZone: http://54.245.207.198:8761/eureka
