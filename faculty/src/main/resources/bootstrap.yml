@@ -6,3 +6,5 @@ spring:
      #uri: http://spring-cloud-config:8888 #docker
       uri: http://172.31.27.154:8888
       failFast: true
+      
+logging.file: /home/ansadmin/logs/faculty/faculty.log
