@@ -2,6 +2,16 @@
   become: yes
   become_user: ansadmin
   tasks:
+    - name: Get running processes list from remote host
+      ignore_errors: yes
+      shell: "ps -few | grep {{msname}} | awk '{print $2}'"
+      register: running_processes
+
+    - name: Kill running processes
+      ignore_errors: yes
+      shell: "kill -9 {{ item }}"
+      with_items: "{{ running_processes.stdout_lines }}"
+
     - name: copying jar file with owner permissions
       copy:
         src: /var/lib/jenkins/workspace/web-app/{{ msname }}/target/{{ msname }}-1.0.jar
