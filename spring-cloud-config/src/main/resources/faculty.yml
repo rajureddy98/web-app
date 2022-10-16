@@ -4,11 +4,11 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
-    password: rajureddy98
+    password: nxrelRI0yonNUV74go9gpJimDWMhAlTg
     platform: postgres
    #url: jdbc:postgresql://host.docker.internal:5432/faculty #docker
-    url: jdbc:postgresql://faculty.ctgdmuvntgrx.ap-south-1.rds.amazonaws.com/
-    username: postgres
+    url: jdbc:postgres://mjhsyhru:nxrelRI0yonNUV74go9gpJimDWMhAlTg@peanut.db.elephantsql.com/mjhsyhru
+    username: mjhsyhru
   jackson:
     serialization:
       fail-on-empty-beans: false
