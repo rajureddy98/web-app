@@ -7,7 +7,7 @@ spring:
     password: nxrelRI0yonNUV74go9gpJimDWMhAlTg
     platform: postgres
    #url: jdbc:postgresql://host.docker.internal:5432/faculty #docker
-    url: jdbc:postgresql://mjhsyhru:nxrelRI0yonNUV74go9gpJimDWMhAlTg@peanut.db.elephantsql.com/mjhsyhru
+    url: jdbc:postgresql://peanut.db.elephantsql.com/mjhsyhru
     username: mjhsyhru
   jackson:
     serialization:
